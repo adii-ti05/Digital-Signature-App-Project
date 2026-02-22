@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Theme Colors */
+:root {
+  --background: #0f172a; /* dark navy background */
+  --foreground: #f8fafc; /* light text */
+  --primary: #6366f1;    /* violet accent */
+  --secondary: #facc15;  /* yellow accent */
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: 'Arial', 'Helvetica', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Smooth box sizing for all elements */
+* {
+  box-sizing: border-box;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--background);
+}
+
+/* Optional: Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+  color: var(--foreground);
+}
+
+/* Links Styling */
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
